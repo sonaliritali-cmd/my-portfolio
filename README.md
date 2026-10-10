@@ -48,8 +48,8 @@ I am a BCA student passionate about web development and learning new technologie
 
 ## 📬 Contact
 
-- GitHub: https://github.com/YOUR-USERNAME
-- Email: YOUR-EMAIL@example.com
+- GitHub: https://github.com/sonaliritali-cmd
+- Email: sonalip2025@gift.edu.in
 
 ---
 
