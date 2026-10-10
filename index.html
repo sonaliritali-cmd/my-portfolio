@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of a BCA student exploring frontend development, design and AI.">
+    <title>My Digital Space | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-noise"></div>
+
+    <!-- Header -->
+    <header class="topbar">
+        <a href="#home" class="brand">
+            <span class="brand-icon">s.</span>
+            <span>MY DIGITAL SPACE</span>
+        </a>
+
+        <div class="header-actions">
+            <button class="theme-switch" id="themeToggle"
+                    aria-label="Switch between day and night themes">
+                <span id="themeLabel">DAY</span>
+                <span class="switch-track"><span class="switch-knob"></span></span>
+                <span id="otherTheme">NIGHT</span>
+            </button>
+
+            <button class="menu-button" id="menuOpen"
+                    aria-expanded="false" aria-controls="menuOverlay">
+                MENU <span>+</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Full screen menu -->
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+        <div class="menu-top">
+            <span>FIND YOUR WAY</span>
+            <button id="menuClose" class="close-button">CLOSE ×</button>
+        </div>
+
+        <nav class="menu-links">
+            <a href="#home"><span>01</span> HOME <b>↗</b></a>
+            <a href="#about"><span>02</span> ABOUT <b>↗</b></a>
+            <a href="#skills"><span>03</span> SKILLS <b>↗</b></a>
+            <a href="#projects"><span>04</span> PROJECTS <b>↗</b></a>
+            <a href="#journey"><span>05</span> JOURNEY <b>↗</b></a>
+            <a href="#ai"><span>06</span> AI LAB <b>↗</b></a>
+            <a href="#contact"><span>07</span> CONTACT <b>↗</b></a>
+        </nav>
+
+        <p class="menu-footer">A CREATIVE MIND IN A DIGITAL WORLD.</p>
+    </div>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero section-pad" id="home">
+            <div class="hero-copy">
+                <div class="eyebrow">
+                    <span class="status-dot"></span>
+                    OPEN TO INTERNSHIP OPPORTUNITIES
+                </div>
+
+                <p class="small-label">WELCOME TO MY LITTLE CORNER OF THE INTERNET</p>
+
+                <h1>
+                    HELLO,<br>
+                    I'M <span class="name-highlight">SONALI PARIJA<span class="period">.</span></span>
+                </h1>
+
+                <div class="hero-roles">
+                    <span>BCA STUDENT</span>
+                    <span>CREATIVE DEVELOPER</span>
+                    <span id="changingRole">FRONTEND DEVELOPER</span>
+                </div>
+
+                <p class="hero-description">
+                    I turn ideas into digital experiences through code,
+                    thoughtful design and curiosity about emerging technology.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="button button-primary">
+                        EXPLORE MY WORK <span>↗</span>
+                    </a>
+                    <a href="#contact" class="button button-secondary">
+                        LET'S CONNECT <span>↗</span>
+                    </a>
+                </div>
+
+                <div class="currently">
+                    <span>✳</span>
+                    Currently exploring <strong>AI + Web Development</strong>
+                    <span class="moving-arrow">→</span>
+                </div>
+
+                <div class="hero-location">
+                    <span>BASED IN</span>
+                    <span>YOUR CITY, INDIA</span>
+                </div>
+            </div>
+
+            <!-- CSS-created interactive orb -->
+            <div class="hero-art" id="heroArt">
+                <div class="art-caption caption-top">IDEAS IN MOTION <span>✳</span></div>
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="orbit orbit-three"></div>
+
+                <div class="orb" id="orb">
+                    <div class="orb-shine"></div>
+                    <div class="orb-core">
+                        <span class="orb-symbol">s<span>.</span></span>
+                        <span class="orb-core-label">THINK · BUILD · LEARN</span>
+                    </div>
+                </div>
+
+                <span class="float-tag tag-html">HTML <b>5</b></span>
+                <span class="float-tag tag-css">CSS <b>3</b></span>
+                <span class="float-tag tag-js">JS <b>↗</b></span>
+                <span class="float-tag tag-ai">AI <b>✳</b></span>
+                <span class="float-tag tag-ui">UI / UX</span>
+                <span class="float-tag tag-prompt">PROMPT</span>
+
+                <div class="art-caption caption-bottom">
+                    <span class="mini-star">✳</span>
+                    A SPACE FOR WHAT'S NEXT
+                </div>
+            </div>
+
+            <div class="hero-bottom-line">
+                <span>SCROLL TO EXPLORE</span>
+                <span class="scroll-line"></span>
+                <span>PORTFOLIO — 2026</span>
+            </div>
+        </section>
+
+        <!-- PROFILE STRIP -->
+        <section class="profile-strip">
+            <div class="profile-strip-heading">A QUICK INTRODUCTION</div>
+            <div class="profile-facts">
+                <div class="fact">
+                    <span class="fact-icon fact-pink">01</span>
+                    <div><strong>BCA</strong><small>STUDENT</small></div>
+                </div>
+                <div class="fact">
+                    <span class="fact-icon fact-mint">02</span>
+                    <div><strong>WEB</strong><small>DEVELOPMENT</small></div>
+                </div>
+                <div class="fact">
+                    <span class="fact-icon fact-yellow">03</span>
+                    <div><strong>AI</strong><small>ENTHUSIAST</small></div>
+                </div>
+                <div class="fact">
+                    <span class="fact-icon fact-purple">04</span>
+                    <div><strong>PROMPT</strong><small>ENGINEERING</small></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about section-pad" id="about">
+            <div class="section-heading">
+                <span class="section-index">01 / THE PERSON BEHIND THE SCREEN</span>
+                <span class="section-star">✳</span>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-big">
+                    <p class="small-label">A LITTLE</p>
+                    <h2>ABOUT<br>MY <span>WORLD.</span></h2>
+                    <div class="about-words">
+                        <span>CURIOUS.</span>
+                        <span>CREATIVE.</span>
+                        <span>ALWAYS LEARNING.</span>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <div class="photo-frame">
+                        <div class="photo-backdrop"></div>
+                        <img src="/formalpic - Copy.jpeg"
+                             alt="My profile photograph"
+                             class="profile-photo"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+
+                        <div class="photo-placeholder">
+                            <span>YOUR PHOTO</span>
+                            <small>Add assets/images/profile.jpg</small>
+                        </div>
+
+                        <div class="photo-sticker sticker-one">CREATIVE<br>THINKER ✳</div>
+                        <div class="photo-sticker sticker-two">CODE<br>WITH PURPOSE</div>
+                        <div class="photo-sticker sticker-three">AI EXPLORER ↗</div>
+                    </div>
+
+                    <div class="about-text">
+                        <span class="tiny-label">A LITTLE ABOUT ME</span>
+                        <p>
+                            I'm a BCA student interested in building useful,
+                            accessible and visually thoughtful digital experiences.
+                            I enjoy learning how websites work, experimenting
+                            with JavaScript and discovering practical ways to use AI.
+                        </p>
+
+                        <div class="more-bio" id="moreBio" hidden>
+                            <p>
+                                My goal is to strengthen my development skills by
+                                creating real projects, solving problems and learning
+                                from experienced people. I'm interested in frontend
+                                development, UI/UX, Python and prompt engineering.
+                            </p>
+                            <p>
+                                I believe every project is an opportunity to improve,
+                                experiment and turn a new idea into something useful.
+                            </p>
+                        </div>
+
+                        <button class="text-button" id="readMore" aria-expanded="false">
+                            READ MORE <span>＋</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="skills section-pad" id="skills">
+            <div class="section-heading">
+                <span class="section-index">02 / THINGS I'M LEARNING & BUILDING</span>
+                <span class="section-star">✳</span>
+            </div>
+
+            <div class="skills-heading">
+                <h2>MY SKILLS<span>.</span></h2>
+                <p>
+                    Every skill opens another door.<br>
+                    Select a skill to explore its world.
+                </p>
+            </div>
+
+            <div class="skill-layout">
+                <div class="skill-constellation" id="skillConstellation">
+                    <div class="skill-center">
+                        <span>MY</span>
+                        <strong>SKILLS</strong>
+                        <small>SELECT ONE ↗</small>
+                    </div>
+
+                    <button class="skill-node node-html active" data-skill="HTML5">HTML5</button>
+                    <button class="skill-node node-css" data-skill="CSS3">CSS3</button>
+                    <button class="skill-node node-js" data-skill="JavaScript">JavaScript</button>
+                    <button class="skill-node node-react" data-skill="React">React</button>
+                    <button class="skill-node node-python" data-skill="Python">Python</button>
+                    <button class="skill-node node-java" data-skill="Java">Java</button>
+                    <button class="skill-node node-sql" data-skill="SQL">SQL</button>
+                    <button class="skill-node node-git" data-skill="Git">Git</button>
+                    <button class="skill-node node-github" data-skill="GitHub">GitHub</button>
+                    <button class="skill-node node-figma" data-skill="UI/UX">UI / UX</button>
+                    <button class="skill-node node-prompt" data-skill="Prompt Engineering">PROMPT ENGINEERING</button>
+                    <button class="skill-node node-design" data-skill="Figma">Figma</button>
+                </div>
+
+                <aside class="skill-detail" aria-live="polite">
+                    <span class="tiny-label">CURRENTLY EXPLORING</span>
+                    <span class="skill-detail-number" id="skillNumber">01</span>
+                    <h3 id="skillTitle">HTML5</h3>
+                    <p id="skillDescription">
+                        Structuring clear, semantic and accessible web pages.
+                    </p>
+                    <div class="skill-tags" id="skillTags">
+                        <span>SEMANTIC HTML</span>
+                        <span>FORMS</span>
+                        <span>ACCESSIBILITY</span>
+                    </div>
+                    <p class="skill-note">Skills reflect my learning journey and project experience.</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects section-pad" id="projects">
+            <div class="section-heading">
+                <span class="section-index">03 / THINGS I'VE MADE</span>
+                <span class="section-star">✳</span>
+            </div>
+
+            <div class="projects-title-row">
+                <h2>IDEAS INTO<br><span>REALITY.</span></h2>
+                <p>
+                    A growing collection of experiments,<br>
+                    learning projects and useful ideas.
+                </p>
+            </div>
+
+            <div class="project-deck" id="projectDeck">
+                <!-- JavaScript inserts project panels here -->
+            </div>
+
+            <div class="project-footer">
+                <span>MORE IDEAS. MORE TO LEARN.</span>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                   class="text-button">EXPLORE GITHUB ↗</a>
+            </div>
+        </section>
+
+        <!-- JOURNEY -->
+        <section class="journey section-pad" id="journey">
+            <div class="section-heading">
+                <span class="section-index">04 / MY LEARNING PATH</span>
+                <span class="section-star">✳</span>
+            </div>
+
+            <h2>STILL GROWING.<br><span>ALWAYS BUILDING.</span></h2>
+
+            <div class="journey-list">
+                <article class="journey-item">
+                    <span class="journey-no">01</span>
+                    <div>
+                        <span class="tiny-label">THE FOUNDATION</span>
+                        <h3>BCA STUDENT</h3>
+                        <p>Building a foundation in programming, computer science and problem-solving.</p>
+                    </div>
+                    <span class="journey-symbol">✳</span>
+                </article>
+
+                <article class="journey-item">
+                    <span class="journey-no">02</span>
+                    <div>
+                        <span class="tiny-label">THE WEB</span>
+                        <h3>FRONTEND DEVELOPMENT</h3>
+                        <p>Practising HTML, CSS and JavaScript by building interactive web projects.</p>
+                    </div>
+                    <span class="journey-symbol">↗</span>
+                </article>
+
+                <article class="journey-item">
+                    <span class="journey-no">03</span>
+                    <div>
+                        <span class="tiny-label">THE EXPERIMENT</span>
+                        <h3>AI & PROMPT ENGINEERING</h3>
+                        <p>Learning how to write clear prompts and use AI tools thoughtfully.</p>
+                    </div>
+                    <span class="journey-symbol">✧</span>
+                </article>
+
+                <article class="journey-item">
+                    <span class="journey-no">04</span>
+                    <div>
+                        <span class="tiny-label">WHAT'S NEXT</span>
+                        <h3>INTERNSHIPS & REAL PROJECTS</h3>
+                        <p>Looking for opportunities to collaborate, contribute and learn from a team.</p>
+                    </div>
+                    <span class="journey-symbol">→</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- AI LAB -->
+        <section class="ai-lab section-pad" id="ai">
+            <div class="section-heading">
+                <span class="section-index">05 / EXPERIMENTS WITH AI</span>
+                <span class="section-star">✳</span>
+            </div>
+
+            <div class="ai-heading">
+                <div>
+                    <span class="tiny-label">THE PROMPT PLAYGROUND</span>
+                    <h2>I DON'T JUST USE AI.<br>
+                        <span>I LEARN HOW TO GUIDE IT.</span>
+                    </h2>
+                </div>
+                <div class="ai-mark">AI<span>✳</span></div>
+            </div>
+
+            <p class="ai-intro">
+                Prompt engineering is about expressing a goal clearly,
+                providing useful context and refining instructions.
+                Explore these illustrative examples.
+            </p>
+
+            <div class="prompt-tabs" role="group" aria-label="Prompt categories">
+                <button class="prompt-tab active" data-prompt="web">WEB DESIGN</button>
+                <button class="prompt-tab" data-prompt="coding">CODING</button>
+                <button class="prompt-tab" data-prompt="content">CONTENT</button>
+                <button class="prompt-tab" data-prompt="research">RESEARCH</button>
+                <button class="prompt-tab" data-prompt="automation">AUTOMATION</button>
+            </div>
+
+            <div class="prompt-workspace">
+                <div class="prompt-column">
+                    <div class="workspace-label">
+                        <span class="workspace-dot dot-pink"></span> PROMPT
+                        <span class="workspace-number">01</span>
+                    </div>
+                    <div class="prompt-content">
+                        <span class="tiny-label">THE INSTRUCTION</span>
+                        <p id="promptText"></p>
+                    </div>
+                </div>
+
+                <div class="workspace-divider">↗</div>
+
+                <div class="result-column">
+                    <div class="workspace-label">
+                        <span class="workspace-dot dot-mint"></span> EXPECTED RESULT
+                        <span class="workspace-number">02</span>
+                    </div>
+                    <div class="result-content">
+                        <span class="tiny-label">WHAT IT AIMS TO PRODUCE</span>
+                        <h3 id="resultTitle"></h3>
+                        <p id="resultText"></p>
+                        <div class="result-tags" id="resultTags"></div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="ai-disclaimer">
+                NOTE: These are sample prompt concepts and illustrative expected outcomes,
+                not live AI-generated responses.
+            </p>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact section-pad" id="contact">
+            <div class="section-heading">
+                <span class="section-index">06 / LET'S MAKE SOMETHING USEFUL</span>
+                <span class="section-star">✳</span>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-main">
+                    <span class="tiny-label">HAVE AN OPPORTUNITY?</span>
+                    <h2>LET'S START<br>A <span>CONVERSATION.</span></h2>
+                    <p>
+                        I'm interested in internships, entry-level opportunities,
+                        collaborative projects and learning from people who build.
+                    </p>
+
+                    <a class="button button-primary"
+                       href="mailto:your.email@example.com?subject=Portfolio%20Opportunity">
+                        SAY HELLO <span>↗</span>
+                    </a>
+
+                    <div class="contact-note">
+                        <span class="status-dot"></span>
+                        OPEN TO LEARNING & NEW OPPORTUNITIES
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card-top">
+                        <span>LET'S CONNECT</span>
+                        <span>✳</span>
+                    </div>
+
+                    <a class="contact-link" href="mailto:your.email@example.com">
+                        <span>EMAIL</span>
+                        <strong>your.email@example.com</strong>
+                        <b>↗</b>
+                    </a>
+
+                    <a class="contact-link" href="https://github.com/" target="_blank"
+                       rel="noopener noreferrer">
+                        <span>GITHUB</span>
+                        <strong>Explore my repositories</strong>
+                        <b>↗</b>
+                    </a>
+
+                    <a class="contact-link" href="https://www.linkedin.com/" target="_blank"
+                       rel="noopener noreferrer">
+                        <span>LINKEDIN</span>
+                        <strong>Connect professionally</strong>
+                        <b>↗</b>
+                    </a>
+
+                    <a class="contact-link" href="assets/resume.pdf" target="_blank">
+                        <span>RESUME</span>
+                        <strong>View my resume</strong>
+                        <b>↗</b>
+                    </a>
+
+                    <div class="contact-card-bottom">MADE WITH CURIOSITY & CODE.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="footer-brand">s.</a>
+        <p>DESIGNED TO LEARN. BUILT TO GROW.</p>
+        <a href="#home" class="back-top">BACK TO TOP ↑</a>
+        <span class="copyright">© <span id="year"></span> YOUR NAME</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
